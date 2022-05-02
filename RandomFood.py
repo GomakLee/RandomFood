@@ -12,3 +12,8 @@ while True:
 print(lunch)
 
 #점심 삭제하기
+ 
+item = input("음식을 삭제하세요 (멈추고 싶으면 q를 입력 하세요.) : ")
+print(item)
+
+
