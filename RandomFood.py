@@ -1,4 +1,6 @@
-#파이썬 - 랜덤으로 점심 정해주기
+import time
+import random
+
 lunch = ["짜장면","마라탕","치킨","떡볶이","김치찌개","보쌈"]
 
 #점심 추가하기
@@ -22,3 +24,11 @@ while True:
     else:
         set_lunch = set_lunch - set([item])
 
+print(set_lunch)
+
+print("5초 후 랜덤으로 음식이 선택됩니다.")
+for k in range(5,0,-1):
+    print(k)
+    time.sleep(1)
+set_lunch = list(set_lunch)
+print(random.choice(set_lunch))
