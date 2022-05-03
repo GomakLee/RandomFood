@@ -11,9 +11,14 @@ while True:
         lunch.append(food)
 print(lunch)
 
-#점심 삭제하기
- 
-item = input("음식을 삭제하세요 (멈추고 싶으면 q를 입력 하세요.) : ")
-print(item)
+#점심 삭제하기 
+set_lunch = set(lunch)
 
+while True:
+    print(set_lunch)
+    item = input("음식을 삭제하세요 (멈추고 싶으면 q를 입력 하세요.) : ")
+    if item == "q":
+        break
+    else:
+        set_lunch = set_lunch - set([item])
 
